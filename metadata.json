@@ -1,0 +1,6 @@
+{
+  "name": "CineSearch",
+  "description": "A professional movie discovery platform powered by OMDb API, featuring advanced search, filtering, and detailed movie insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

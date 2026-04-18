@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-brand-primary: #E50914; /* Cinematic red */
+  --color-brand-background: #000000;
+  --color-brand-surface: #141414;
+  --color-brand-text: #FFFFFF;
+  --color-brand-muted: #808080;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-background text-brand-text font-sans antialiased;
+  }
+}
+
+/* Custom fade-in animation */
+.fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
